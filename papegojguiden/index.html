@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Startsida | Papegojguiden</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <script src="javascript.js"></script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar">
+         <div class="content">
+            <div class="logo">
+               <a href="index.html"><img src="logo.svg" alt="Papegojguidens logga"></a>
+            </div>
+            <ul class="menu-list">
+               <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+               </div>
+               <li><a class="active" href="index.html">Startsida</a></li>
+               <li><a href="om_papegojor.html">Om papegojor</a></li>
+               <li><a href="skotsel_omvardnad.html">Skötsel & omvårdnad</a></li>
+               <li><a href="innan_adoption.html">Innan du adopterar</a></li>
+               <li><a href="mina_papegojor.html">Mina papegojor</a></li>
+               <li><a href="kontakta_mig.html">Kontakta mig</a></li>
+            </ul>
+            <div class="icon menu-btn">
+               <i class="fas fa-bars"></i>
+            </div>
+         </div>
+      </nav>
+      <div class="hero" >
+         <h1 data-aos="fade-down"  data-aos-offset="200" data-aos-duration="1000">Din grundläggande papgojguide</h1>
+         <p data-aos="fade-down"  data-aos-offset="200" data-aos-duration="1000">Här hittar du allt om papegojor!</p>
+         <img src="hero.jpg" alt="En röd Amazon-papegoja"/>
+         <div class="btn"><a href="om_papegojor.html" class="hero-btn"><span>Bli en papegojexpert</span></a></div>
+         <div class="arrow-container">
+            <div class="arrow-down"></div>
+         </div>
+      </div>
+      <main>
+         <div class="wrapper"  data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
+            <section class="columns">
+               <div class="column">
+                  <img src="fakta1.jpg" alt="En blå och gul">
+                  <h1>Färgglada</h1>
+                  <p>Papegojor är väldigt färgglada fåglar och finns i alla möjliga färger och färgkombinationer! Några vanliga färger är röd, grön, blå och grå.</p>
+               </div>
+               <div class="column">
+                  <img src="fakta2.jpg" alt="En röd Amazon-papegoja">
+                  <h1>Intelligenta</h1>
+                  <p>Papegojor kan både härma ljud, lära sig att tala och lösa problem! De är väldigt sociala djur och älskar att tala med sina ägare och andra djur.</p>
+               </div>
+               <div class="column">
+                  <img src="fakta3.jpg" alt="En grön">
+                  <h1>Många arter</h1>
+                  <p>Det finns över 400 arter av papegojor! Tvärtemot vad många tror så lever inte papegojor endast i tropiska regioner utan även i kalla och torra regioner.</p>
+               </div>
+            </section>
+         </div>
+         <div class="box" data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
+            <h1 class="box_titel">Om Papegojguiden</h1>
+            <p class="box_text">Denna hemsidan är skapad för att hjälpa alla- oavsett om du är en ägare, blivande ägare eller bara är intresserad av papegojor! Det finns allt från intressanta fakta och texter till rolig papegoj-quiz! Jag som driver denna hemsidan heter Moha och har själv ägt papegojor hela mitt liv. Många papegojor lever idag olyckliga liv pågrund av okunniga ägare, något jag sett alldelens för mycket. Men detta är något jag vill minska- och detta ska denna hemsidan bidra till!<br>
+               <span> Är du redo att lära dig mer om papegojor och minska misskötseln?</span>
+            </p>
+         </div>
+      </main>
+      <div class="footer">
+         <div class="row">
+            <ul>
+               <li><a class="active" href="index.html">Startsida</a></li>
+               <li><a href="om_papegojor.html">Om papegojor</a></li>
+               <li><a href="skotsel_omvardnad.html">Skötsel & omvårdnad</a></li>
+               <li><a href="innan_adoption.html">Innan du adopterar</a></li>
+               <li><a href="mina_papegojor.html">Mina papegojor</a></li>
+               <li><a href="kontakta_mig.html">Kontakta mig</a></li>
+            </ul>
+         </div>
+         <div class="row">
+            Papegojguiden © 2021 Moha Alghalibi | Alla rättigheter reserverade
+         </div>
+         <div class="row">
+            <span>Alla bilder tagna från unsplash.com</span>
+         </div>
+      </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         const body = document.querySelector("body");
+         const navbar = document.querySelector(".navbar");
+         const menuBtn = document.querySelector(".menu-btn");
+         const cancelBtn = document.querySelector(".cancel-btn");
+         menuBtn.onclick = ()=>{
+           navbar.classList.add("show");
+           menuBtn.classList.add("hide");
+           body.classList.add("disabled");
+         }
+         cancelBtn.onclick = ()=>{
+           body.classList.remove("disabled");
+           navbar.classList.remove("show");
+           menuBtn.classList.remove("hide");
+         }
+         window.onscroll = ()=>{
+           this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+         }
+         
+         AOS.init(); 
+         
+      </script>
+      </footer>
+   </body>
+</html>
