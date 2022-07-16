@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="javascript.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
@@ -46,12 +48,12 @@
 
 <main>
   
-  <div class="box">
+  <div class="box" data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
     <h1 class="box_titel">Hur du tar hand om din papegoja</h1>
   </div>
   
   
-   <div class="fakta_container">
+   <div class="fakta_container"  data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
         <div class="fakta_row">
           <h2>Investera i en säker, rymlig bur</h2>
           <p style="float:right">Din papegoja behöver en bur att kalla sitt hem. Burar finns i olika former och storlekar. När du handlar är det viktigaste att tänka på att buren måste vara tillräckligt bred för att din papegoja ska kunna sprida sina vingar. Det är här din fågel kommer att tillbringa större delen av sin tid, så du vill inte köpa en bur som är för liten. Du borde också ha ett litet hänglås till dörren. Fåglar är <span>otroligt</span> smarta och händiga varelser, så om du inte är försiktig kan din papegoja ta reda på hur de kan rymma från buren. Ett hänglås säkerställer att din fågel stannar inne i sin bur, där den är säker när du inte är hemma. Du kan också lägga till papperspåsar, lådor och små handdukar i buren för att ge din fågel något att gömma sig under. Säkerhet är viktigt för de flesta fåglar, så det kan få dem att känna sig riktigt hemma i buren om man ger dem något att snygga sig under.<br><br>
@@ -71,7 +73,7 @@
         </div>
       </div>
 
-       <div class="fakta_container">
+       <div class="fakta_container"  data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
         <div class="fakta_row">
           <h2>Ge leksaker och tuggbara godisar</h2>
           <p style="float:left">Fåglar är lekfulla i sin natur, vilket innebär att de älskar leksaker. Leksaker kan hjälpa till att lindra uttråkan om din fågel är ensam hemma under längre perioder. De kan också uppmuntra till träning. Fåglar älskar att tugga på leksaker och mat, och tugga hjälper till att hålla näbben i toppskick, så det är viktigt att du förser din papegoja med mycket tuggbara leksaker. Tuggbara leksaker kan till exempel vara kottar, naturfiberrep och trädgrenar. Vissa fåglar gillar till och med att riva upp papper och majskolvar.<br><br>
@@ -83,11 +85,11 @@
         </div>
     </div>
  
-  <div class="box">
+  <div class="box"  data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
     <h1 class="box_titel">Misskötseln av papegojor</h1>
   </div>
   
-  <div class="fakta_container">
+  <div class="fakta_container"  data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
         <div class="fakta_row">
           <h2>Ett allvarligt & stort problem</h2>
     
@@ -102,7 +104,7 @@
         </p>
       </div>
   </div>
-     <div class="fakta_container">
+     <div class="fakta_container"  data-aos="fade-up"  data-aos-offset="200" data-aos-duration="1000">
         <div class="fakta_row">
           <h2>Var med och minska misskötseln!</h2>
           <p style="float:right">Minska misskötseln av papegojor genom att se till att de har en stor bur, god mat och massor av leksaker för att alltid kunna leka och röra sig fritt. Det är också <span>mycket viktigt</span> att ibland släppa ut din fågel i ditt hus eller lägenhet, eller ett enstaka rum och låta de flyga fritt, precis som i det vilda! Socialisera också med din papegoja och få den att känna sig älskad genom att spendera mycket tid med den, prata, leka och gosa dem om de gillar det!<br><br>
@@ -114,26 +116,49 @@
   
 </main>
 
-<footer></footer>
+<div class="footer">
+  <div class="row">
+     <ul>
+        <li><a href="index.html">Startsida</a></li>
+        <li><a class="active" href="om_papegojor.html">Om papegojor</a></li>
+        <li><a href="skotsel_omvardnad.html">Skötsel & omvårdnad</a></li>
+        <li><a href="innan_adoption.html">Innan du adopterar</a></li>
+        <li><a href="mina_papegojor.html">Mina papegojor</a></li>
+        <li><a href="kontakta_mig.html">Kontakta mig</a></li>
+     </ul>
+  </div>
+  <div class="row">
+     Papegojguiden © 2021 Moha Alghalibi | Alla rättigheter reserverade
+  </div>
+  <div class="row">
+     <span>Alla bilder tagna från unsplash.com</span>
+  </div>
+</div>
+</footer>
 
-  <script>
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
-  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = ()=>{
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+  
+  AOS.init(); 
+  
+</script>
 </body>
 </html>
